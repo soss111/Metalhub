@@ -1,0 +1,2347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MetalHUB – CNC Machining & Laser Marking</title>
+<meta name="description" content="MetalHUB OÜ — CNC turning, milling, laser marking and metal 3D printing from Estonia. Tolerances to ±0.02 mm, 3–5 day prototype lead time, 1–2 day shipping to Norway. ISO 9001:2015 certified.">
+<meta name="robots" content="index, follow">
+<meta name="keywords" content="CNC machining, CNC turning, CNC milling, laser marking, metal 3D printing, precision parts, Estonia, Norway, offshore, marine, medical, aerospace">
+<link rel="canonical" href="https://www.metalhub.ee/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.metalhub.ee/">
+<meta property="og:title" content="MetalHUB – CNC Machining & Laser Marking from Estonia">
+<meta property="og:description" content="Precision CNC turning, milling, laser marking and metal 3D printing. Tolerances to ±0.02 mm. ISO 9001:2015. 3–5 day prototypes. Shipping to Norway in 1–2 days.">
+<meta property="og:image" content="https://www.metalhub.ee/og-image.jpg">
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="MetalHUB">
+
+<!-- Twitter / X Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="MetalHUB – CNC Machining & Laser Marking from Estonia">
+<meta name="twitter:description" content="Precision CNC turning, milling, laser marking and metal 3D printing. Tolerances to ±0.02 mm. ISO 9001:2015. Shipping to Norway in 1–2 days.">
+<meta name="twitter:image" content="https://www.metalhub.ee/og-image.jpg">
+
+<!-- Schema.org JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ManufacturingBusiness",
+  "name": "MetalHUB OÜ",
+  "url": "https://www.metalhub.ee",
+  "logo": "https://www.metalhub.ee/logo.svg",
+  "image": "https://www.metalhub.ee/og-image.jpg",
+  "description": "Precision CNC turning, milling, laser marking and metal 3D printing from Estonia. ISO 9001:2015 certified. Serving oil & gas, marine, medical and aerospace industries across Scandinavia and Europe.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Tööstuse tee 14",
+    "addressLocality": "Tallinn",
+    "postalCode": "13816",
+    "addressCountry": "EE"
+  },
+  "telephone": "+37251234567",
+  "email": "info@metalhub.ee",
+  "foundingDate": "2013",
+  "areaServed": ["EE", "NO", "SE", "FI", "DK", "DE", "GB"],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Precision Machining Services",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "CNC Turning", "description": "Multi-axis CNC turning to ±0.02 mm, Ø 0.35–420 mm"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "CNC Milling", "description": "3- and 5-axis CNC milling, work envelope 2000×3000×500 mm"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Laser Marking", "description": "Permanent fibre laser marking on metals and plastics"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Metal 3D Printing", "description": "DMLS/SLM metal additive manufacturing in 316L, Ti6Al4V, Inconel"}}
+    ]
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/metalhub"
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #F5F2ED;
+  --bg2: #EDEAE3;
+  --bg3: #E2DDD5;
+  --ink: #1A1714;
+  --ink2: #4A4540;
+  --ink3: #8A8480;
+  --accent: #C84B14;
+  --accent2: #E8622A;
+  --steel: #2C3540;
+  --steel2: #3D4D5C;
+  --white: #FAFAF8;
+  --font-head: 'Syne', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-mono: 'DM Mono', monospace;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+
+section { scroll-margin-top: 80px; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--ink);
+  overflow-x: hidden;
+}
+
+/* ── HERO SPEC STRIP ── */
+.hero-spec-strip {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--bg3);
+  font-size: 0.8rem;
+  color: var(--ink3);
+  font-family: var(--font-mono);
+}
+.hss-val {
+  color: var(--ink);
+  font-weight: 500;
+}
+.hss-unit {
+  color: var(--ink2);
+}
+.hss-divider {
+  color: var(--bg3);
+}
+
+
+/* ── HERO SERVICE TAGS ── */
+.hero-service-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+.hst {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  color: var(--ink2);
+  background: var(--bg2);
+  border: 1px solid var(--bg3);
+  padding: 0.35rem 0.75rem;
+  white-space: nowrap;
+}
+
+/* ── NAV ── */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 1.25rem 4rem;
+  background: var(--bg);
+  border-bottom: 1px solid var(--bg3);
+  transition: box-shadow 0.3s;
+}
+nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
+.nav-logo {
+  font-family: var(--font-head);
+  font-weight: 800;
+  font-size: 1.3rem;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+  text-decoration: none;
+}
+.nav-logo span { color: var(--accent); }
+.nav-links { display: flex; gap: 2.5rem; list-style: none; }
+.nav-links a {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--ink2);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--accent); }
+.nav-cta {
+  background: var(--accent);
+  color: var(--white);
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.875rem;
+  padding: 0.6rem 1.4rem;
+  border: none; cursor: pointer;
+  letter-spacing: 0.03em;
+  transition: background 0.2s, transform 0.15s;
+  text-decoration: none;
+  display: inline-block;
+}
+.nav-cta:hover { background: var(--accent2); transform: translateY(-1px); }
+
+/* ── HERO ── */
+#hero {
+  min-height: 100vh;
+  display: flex; align-items: center;
+  padding: 8rem 4rem 4rem;
+  position: relative;
+  overflow: hidden;
+}
+.hero-bg {
+  position: absolute; inset: 0; z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.hero-bg svg { width: 100%; height: 100%; }
+.hero-content {
+  position: relative; z-index: 1;
+  max-width: 820px;
+}
+.hero-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--accent);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  display: flex; align-items: center; gap: 0.75rem;
+}
+.hero-label::before {
+  content: '';
+  display: block;
+  width: 32px; height: 1px;
+  background: var(--accent);
+}
+h1 {
+  font-family: var(--font-head);
+  font-weight: 800;
+  font-size: clamp(3.5rem, 7vw, 6.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  color: var(--ink);
+  margin-bottom: 2rem;
+}
+h1 em {
+  font-style: normal;
+  color: var(--accent);
+}
+.hero-sub {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--ink2);
+  max-width: 520px;
+  margin-bottom: 3rem;
+  font-weight: 300;
+}
+.hero-actions { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; }
+.btn-primary {
+  background: var(--steel);
+  color: var(--white);
+  padding: 0.9rem 2rem;
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.9rem;
+  border: none; cursor: pointer;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.2s, transform 0.15s;
+}
+.btn-primary:hover { background: var(--steel2); transform: translateY(-2px); }
+.btn-ghost {
+  color: var(--ink);
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  display: flex; align-items: center; gap: 0.5rem;
+  border-bottom: 1px solid var(--ink3);
+  padding-bottom: 2px;
+  transition: color 0.2s, border-color 0.2s;
+}
+.btn-ghost:hover { color: var(--accent); border-color: var(--accent); }
+.hero-stats {
+  position: absolute; right: 4rem; bottom: 4rem; z-index: 1;
+  display: flex; flex-direction: column; gap: 1.5rem;
+}
+.hero-stat {
+  text-align: right;
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity 0.6s, transform 0.6s;
+}
+.hero-stat.visible { opacity: 1; transform: translateX(0); }
+.hero-stat-num {
+  font-family: var(--font-mono);
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--ink);
+  display: block;
+  line-height: 1;
+}
+.hero-stat-label {
+  font-size: 0.75rem;
+  color: var(--ink3);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* ── SECTIONS ── */
+section { padding: 6rem 4rem; }
+.section-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1rem;
+  display: flex; align-items: center; gap: 0.75rem;
+}
+.section-label::before {
+  content: '';
+  width: 24px; height: 1px;
+  background: var(--accent);
+  display: block;
+}
+h2 {
+  font-family: var(--font-head);
+  font-weight: 800;
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  color: var(--ink);
+  margin-bottom: 1rem;
+}
+.section-intro {
+  font-size: 1rem;
+  color: var(--ink2);
+  line-height: 1.7;
+  max-width: 520px;
+  margin-bottom: 3.5rem;
+  font-weight: 300;
+}
+
+/* ── SERVICES ── */
+#services { background: var(--white); }
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--bg3);
+  border: 1px solid var(--bg3);
+}
+.service-card {
+  background: var(--white);
+  padding: 2.5rem;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s, transform 0.6s, background 0.3s;
+}
+.service-card.visible { opacity: 1; transform: translateY(0); }
+.service-card:nth-child(2) { transition-delay: 0.15s; }
+.service-card:nth-child(3) { transition-delay: 0.3s; }
+.service-card:nth-child(4) { transition-delay: 0.45s; }
+.service-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+.service-card:hover::after { transform: scaleX(1); }
+.service-card:hover { background: var(--bg); }
+.service-num {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--ink3);
+  letter-spacing: 0.1em;
+  margin-bottom: 1.5rem;
+}
+.service-icon {
+  width: 40px; height: 40px;
+  margin-bottom: 1.25rem;
+}
+.service-title {
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+  color: var(--ink);
+}
+.service-desc {
+  font-size: 0.9rem;
+  line-height: 1.75;
+  color: var(--ink2);
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+}
+.service-bullets {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding-top: 0.5rem;
+}
+.service-bullets span {
+  font-size: 0.78rem;
+  color: var(--ink2);
+  line-height: 1.5;
+  font-weight: 400;
+}
+.service-bullets span::first-letter {
+  color: var(--accent);
+}
+.service-spec {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--accent);
+  letter-spacing: 0.05em;
+  border-top: 1px solid var(--bg3);
+  padding-top: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* ── MATERIALS ── */
+#materials { background: var(--steel); }
+#materials .section-label { color: #E8622A; }
+#materials .section-label::before { background: #E8622A; }
+#materials h2 { color: var(--white); }
+#materials .section-intro { color: rgba(250,250,248,0.6); }
+.materials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+.material-item {
+  background: var(--steel);
+  padding: 1.5rem 1.25rem;
+  text-align: center;
+  transition: background 0.25s;
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.5s, transform 0.5s, background 0.25s;
+}
+.material-item.visible { opacity: 1; transform: scale(1); }
+.material-item:hover { background: var(--steel2); }
+.material-sym {
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: rgba(250,250,248,0.25);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.material-name {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: rgba(250,250,248,0.85);
+  letter-spacing: 0.05em;
+}
+
+/* ── SPECS ── */
+#specifications { background: var(--bg2); }
+.specs-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+.specs-numbers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  background: var(--bg3);
+}
+.spec-box {
+  background: var(--bg2);
+  padding: 2rem 1.75rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s, transform 0.6s;
+}
+.spec-box.visible { opacity: 1; transform: translateY(0); }
+.spec-box:nth-child(2) { transition-delay: 0.1s; }
+.spec-box:nth-child(3) { transition-delay: 0.2s; }
+.spec-box:nth-child(4) { transition-delay: 0.3s; }
+.spec-val {
+  font-family: var(--font-mono);
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: var(--accent);
+  display: block;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+.spec-unit {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--ink3);
+}
+.spec-label {
+  font-size: 0.8rem;
+  color: var(--ink3);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-top: 0.4rem;
+}
+.specs-text h3 {
+  font-family: var(--font-head);
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.5rem;
+  color: var(--ink);
+}
+.specs-text p {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--ink2);
+  margin-bottom: 1.25rem;
+  font-weight: 300;
+}
+.cert-badges {
+  display: flex; gap: 0.75rem; flex-wrap: wrap;
+  margin-top: 2rem;
+}
+.cert-badge {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  padding: 0.4rem 0.75rem;
+  border: 1px solid var(--bg3);
+  color: var(--ink2);
+  background: var(--white);
+}
+
+/* ── INDUSTRIES ── */
+#industries { background: var(--bg2); }
+.industries-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--bg3);
+  border: 1px solid var(--bg3);
+  margin-top: 0.5rem;
+}
+.ind-pill {
+  background: var(--bg2);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  cursor: default;
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.5s, transform 0.5s, background 0.2s;
+}
+.ind-pill.visible { opacity: 1; transform: translateY(0); }
+.ind-pill:nth-child(2) { transition-delay: 0.06s; }
+.ind-pill:nth-child(3) { transition-delay: 0.12s; }
+.ind-pill:nth-child(4) { transition-delay: 0.18s; }
+.ind-pill:nth-child(5) { transition-delay: 0.24s; }
+.ind-pill:nth-child(6) { transition-delay: 0.30s; }
+.ind-pill:hover { background: var(--white); }
+
+.ind-pill.visible { opacity: 1; transform: translateY(0); }
+.ind-pill:nth-child(2) { transition-delay: 0.06s; }
+.ind-pill:nth-child(3) { transition-delay: 0.12s; }
+.ind-pill:nth-child(4) { transition-delay: 0.18s; }
+.ind-pill:nth-child(5) { transition-delay: 0.24s; }
+.ind-pill:nth-child(6) { transition-delay: 0.30s; }
+.ind-pill:hover { background: var(--white); }
+.ind-pill svg {
+  width: 28px; height: 28px;
+  min-width: 28px;
+  color: var(--accent);
+  opacity: 0.85;
+}
+.ind-pill div { display: flex; flex-direction: column; gap: 0.2rem; }
+.ind-pill strong {
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+.ind-pill span {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  color: var(--ink3);
+}
+
+/* ── MASKINPARK ── */
+#maskinpark { background: var(--bg); }
+.machines-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--bg3);
+  border: 1px solid var(--bg3);
+  margin-top: 0.5rem;
+}
+.machine-card:last-child {
+  grid-column: 1 / -1;
+}
+.machine-card:last-child .machine-specs-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem 2rem;
+}
+.machine-card {
+  background: var(--bg);
+  padding: 2.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.65s, transform 0.65s, background 0.25s;
+}
+.machine-card.visible { opacity: 1; transform: translateY(0); }
+.machine-card:nth-child(2) { transition-delay: 0.12s; }
+.machine-card:nth-child(3) { transition-delay: 0.24s; }
+.machine-card:nth-child(4) { transition-delay: 0.36s; }
+.machine-card:nth-child(5) { transition-delay: 0.48s; }
+.machine-card:hover { background: var(--white); }
+.machine-brand-row {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+.machine-brand {
+  font-family: var(--font-head);
+  font-weight: 800;
+  font-size: 1.6rem;
+  letter-spacing: -0.04em;
+  color: var(--ink);
+}
+.machine-brand span { color: var(--accent); }
+.machine-category {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink3);
+  background: var(--bg3);
+  padding: 0.3rem 0.65rem;
+}
+.machine-model {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--accent);
+  letter-spacing: 0.06em;
+  margin-bottom: 1rem;
+}
+.machine-desc {
+  font-size: 0.875rem;
+  line-height: 1.75;
+  color: var(--ink2);
+  font-weight: 300;
+  margin-bottom: 1.75rem;
+}
+.machine-specs-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-top: 1px solid var(--bg3);
+  padding-top: 1.25rem;
+  margin-top: auto;
+}
+.machine-specs-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 0.8rem;
+}
+.machine-spec-key {
+  color: var(--ink3);
+  font-weight: 400;
+}
+.machine-spec-val {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--ink);
+  letter-spacing: 0.04em;
+}
+.machine-logo-icon {
+  width: 40px; height: 40px;
+  display: flex; align-items: center; justify-content: center;
+  border: 1px solid var(--bg3);
+  margin-bottom: 1.5rem;
+}
+.machine-logo-icon svg { width: 22px; height: 22px; }
+
+/* ── TESTIMONIALS ── */
+#testimonials { background: var(--bg2); }
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--bg3);
+  border: 1px solid var(--bg3);
+  margin-top: 0.5rem;
+}
+.testimonial-card {
+  background: var(--bg2);
+  padding: 2.25rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s, transform 0.6s, background 0.25s;
+}
+.testimonial-card.visible { opacity: 1; transform: translateY(0); }
+.testimonial-card:nth-child(2) { transition-delay: 0.1s; }
+.testimonial-card:nth-child(3) { transition-delay: 0.2s; }
+.testimonial-card:hover { background: var(--white); }
+.testimonial-quote {
+  font-family: var(--font-head);
+  font-weight: 800;
+  font-size: 3.5rem;
+  line-height: 1;
+  color: var(--accent);
+  opacity: 0.18;
+  margin-bottom: 0.5rem;
+}
+.testimonial-text {
+  font-size: 0.92rem;
+  line-height: 1.75;
+  color: var(--ink2);
+  font-weight: 300;
+  margin-bottom: 1.75rem;
+  flex-grow: 1;
+}
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 1.25rem;
+}
+.testimonial-avatar {
+  width: 42px; height: 42px;
+  min-width: 42px;
+  border-radius: 50%;
+  background: var(--steel);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+}
+.testimonial-author div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+.testimonial-author strong {
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+}
+.testimonial-author span {
+  font-size: 0.75rem;
+  color: var(--ink3);
+  line-height: 1.4;
+}
+.testimonial-industry {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border: 1px solid var(--bg3);
+  padding: 0.35rem 0.75rem;
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+/* ── PROCESS ── */
+#process { background: var(--white); }
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0;
+  position: relative;
+  margin-top: 3rem;
+}
+.process-steps::before {
+  content: '';
+  position: absolute;
+  top: 1.5rem; left: 2rem; right: 2rem;
+  height: 1px;
+  background: var(--bg3);
+  z-index: 0;
+}
+.process-step {
+  padding: 0 1.5rem;
+  position: relative; z-index: 1;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s, transform 0.6s;
+}
+.process-step.visible { opacity: 1; transform: translateY(0); }
+.process-step:nth-child(2) { transition-delay: 0.15s; }
+.process-step:nth-child(3) { transition-delay: 0.3s; }
+.process-step:nth-child(4) { transition-delay: 0.45s; }
+.process-step:nth-child(5) { transition-delay: 0.6s; }
+.step-dot {
+  width: 3rem; height: 3rem;
+  background: var(--white);
+  border: 1px solid var(--bg3);
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 1.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--ink3);
+  transition: background 0.3s, border-color 0.3s, color 0.3s;
+}
+.process-step:hover .step-dot {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white;
+}
+.step-title {
+  font-family: var(--font-head);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+}
+.step-desc {
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: var(--ink2);
+  font-weight: 300;
+}
+
+/* ── QUALITY ── */
+#quality { background: var(--steel); }
+#quality .section-label { color: #E8622A; }
+#quality .section-label::before { background: #E8622A; }
+#quality h2 { color: var(--white); }
+#quality .section-intro { color: rgba(250,250,248,0.6); }
+
+.quality-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.06);
+  margin-top: 0.5rem;
+}
+.quality-step {
+  background: var(--steel);
+  padding: 2.25rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s, transform 0.6s, background 0.25s;
+}
+.quality-step.visible { opacity: 1; transform: translateY(0); }
+.quality-step:nth-child(2) { transition-delay: 0.08s; }
+.quality-step:nth-child(3) { transition-delay: 0.16s; }
+.quality-step:nth-child(4) { transition-delay: 0.24s; }
+.quality-step:nth-child(5) { transition-delay: 0.32s; }
+.quality-step:nth-child(6) { transition-delay: 0.40s; }
+.quality-step:hover { background: var(--steel2); }
+.quality-step::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+.quality-step:hover::before { transform: scaleX(1); }
+.quality-num {
+  font-family: var(--font-mono);
+  font-size: 2.25rem;
+  font-weight: 500;
+  color: rgba(250,250,248,0.12);
+  line-height: 1;
+  margin-bottom: 1rem;
+  transition: color 0.3s;
+}
+.quality-step:hover .quality-num { color: var(--accent); opacity: 0.5; }
+.quality-title {
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: -0.01em;
+  color: var(--white);
+  margin-bottom: 0.75rem;
+}
+.quality-desc {
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: rgba(250,250,248,0.55);
+  font-weight: 300;
+}
+.quality-desc strong { color: rgba(250,250,248,0.85); font-weight: 500; }
+
+/* Certification strip */
+.quality-certs {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-top: none;
+  margin-top: -1px;
+}
+.quality-cert-item {
+  background: #232B33;
+  padding: 1.25rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.4rem;
+}
+.qc-badge {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--white);
+  letter-spacing: 0.04em;
+}
+.qc-label {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(250,250,248,0.35);
+}
+
+/* ── FAQ ── */
+#faq { background: var(--white); }
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--bg3);
+}
+.faq-item {
+  border-bottom: 1px solid var(--bg3);
+}
+.faq-q {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  padding: 1.25rem 0;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--ink);
+  transition: color 0.2s;
+}
+.faq-q:hover { color: var(--accent); }
+.faq-arrow {
+  flex-shrink: 0;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--ink3);
+  transition: transform 0.3s, color 0.2s;
+}
+.faq-item.open .faq-arrow {
+  transform: rotate(180deg);
+  color: var(--accent);
+}
+.faq-a {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, padding-bottom 0.35s ease;
+}
+.faq-item.open .faq-a {
+  max-height: 400px;
+  padding-bottom: 1.5rem;
+}
+.faq-a p {
+  font-size: 0.9rem;
+  line-height: 1.75;
+  color: var(--ink2);
+  font-weight: 300;
+  max-width: 720px;
+}
+.faq-a p strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+/* ── CONTACT ── */
+#contact { background: var(--ink); }
+#contact .section-label { color: var(--accent2); }
+#contact .section-label::before { background: var(--accent2); }
+#contact h2 { color: var(--white); }
+#contact .section-intro { color: rgba(250,250,248,0.55); }
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 5rem;
+  align-items: start;
+}
+.contact-info h3 {
+  font-family: var(--font-head);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 2rem;
+  letter-spacing: -0.02em;
+}
+.contact-detail {
+  display: flex; align-items: flex-start; gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.contact-detail-icon {
+  width: 36px; height: 36px; min-width: 36px;
+  border: 1px solid rgba(255,255,255,0.1);
+  display: flex; align-items: center; justify-content: center;
+}
+.contact-detail-icon svg { width: 16px; height: 16px; stroke: var(--accent2); fill: none; stroke-width: 1.5; }
+.contact-detail-text {
+  font-size: 0.875rem;
+  line-height: 1.7;
+  color: rgba(250,250,248,0.7);
+}
+.contact-detail-text strong {
+  display: block;
+  color: var(--white);
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-family: var(--font-mono);
+}
+.contact-form { display: flex; flex-direction: column; gap: 1rem; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.form-group { display: flex; flex-direction: column; gap: 0.4rem; }
+.form-group label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(250,250,248,0.4);
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: var(--white);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  padding: 0.75rem 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+  appearance: none;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--accent);
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder { color: rgba(250,250,248,0.2); }
+.form-group select option { background: var(--ink); color: var(--white); }
+.form-group textarea { resize: vertical; min-height: 120px; }
+.form-submit {
+  background: var(--accent);
+  color: var(--white);
+  border: none;
+  padding: 1rem 2rem;
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.9rem;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+  align-self: flex-start;
+  transition: background 0.2s, transform 0.15s;
+  display: flex; align-items: center; gap: 0.5rem;
+}
+.form-submit:hover { background: var(--accent2); transform: translateY(-2px); }
+.form-success {
+  display: none;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: #7DC88B;
+  margin-top: 1rem;
+}
+
+/* ── FORM TRUST BAR ── */
+.form-trust-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.25rem 1.5rem;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.07);
+  margin-bottom: 1.25rem;
+}
+.ftb-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.8rem;
+  color: rgba(250,250,248,0.55);
+  line-height: 1.5;
+}
+.ftb-item svg {
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+  stroke: var(--accent2);
+}
+
+/* ── FILE UPLOAD ── */
+.file-drop {
+  border: 1px dashed rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.03);
+  padding: 1.75rem;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.file-drop:hover, .file-drop.dragover {
+  border-color: var(--accent);
+  background: rgba(200,75,20,0.06);
+}
+.file-drop-text {
+  font-size: 0.875rem;
+  color: rgba(250,250,248,0.5);
+  margin: 0;
+}
+.file-browse {
+  color: var(--accent2);
+  text-decoration: underline;
+  cursor: pointer;
+}
+.file-drop-hint {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  color: rgba(250,250,248,0.2);
+  margin-top: 0.4rem;
+}
+.file-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+.file-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 0.5rem 0.75rem;
+  font-size: 0.8rem;
+}
+.file-item-name {
+  color: rgba(250,250,248,0.7);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 280px;
+}
+.file-item-size {
+  color: rgba(250,250,248,0.3);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  margin-left: 0.75rem;
+  white-space: nowrap;
+}
+.file-item-remove {
+  background: none;
+  border: none;
+  color: rgba(250,250,248,0.3);
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0 0.25rem;
+  line-height: 1;
+  transition: color 0.2s;
+  margin-left: 0.5rem;
+}
+.file-item-remove:hover { color: var(--accent2); }
+
+/* ── FOOTER ── */
+footer {
+  background: #0E0C0A;
+  padding: 2.5rem 4rem;
+  display: flex; align-items: center; justify-content: space-between;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+.footer-logo {
+  font-family: var(--font-head);
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: rgba(250,250,248,0.4);
+  letter-spacing: -0.03em;
+}
+.footer-logo span { color: var(--accent); opacity: 1; }
+.footer-copy {
+  font-size: 0.75rem;
+  color: rgba(250,250,248,0.25);
+  font-family: var(--font-mono);
+}
+.footer-links { display: flex; gap: 2rem; }
+.footer-links a {
+  font-size: 0.75rem;
+  color: rgba(250,250,248,0.3);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-links a:hover { color: rgba(250,250,248,0.7); }
+
+/* ── MOBILE HAMBURGER ── */
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 4px;
+  background: none;
+  border: none;
+}
+.nav-hamburger span {
+  display: block;
+  width: 22px;
+  height: 1.5px;
+  background: var(--ink);
+  transition: all 0.3s;
+}
+.mobile-nav-open .nav-hamburger span:nth-child(1) { transform: rotate(45deg) translate(4.5px, 4.5px); }
+.mobile-nav-open .nav-hamburger span:nth-child(2) { opacity: 0; }
+.mobile-nav-open .nav-hamburger span:nth-child(3) { transform: rotate(-45deg) translate(4.5px, -4.5px); }
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 60px; left: 0; right: 0;
+  background: var(--bg);
+  border-bottom: 1px solid var(--bg3);
+  z-index: 99;
+  padding: 1.5rem;
+  flex-direction: column;
+  gap: 0;
+}
+.mobile-menu.open { display: flex; }
+.mobile-menu a {
+  display: block;
+  padding: 0.85rem 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--ink2);
+  text-decoration: none;
+  border-bottom: 1px solid var(--bg3);
+  transition: color 0.2s;
+}
+.mobile-menu a:last-child { border-bottom: none; }
+.mobile-menu a:hover { color: var(--accent); }
+
+/* ── MOBILE ── */
+@media (max-width: 900px) {
+  /* Nav */
+  nav { padding: 1rem 1.5rem; }
+  .nav-links { display: none; }
+  .nav-hamburger { display: flex; }
+
+  /* Typography */
+  h1 { font-size: 2.6rem; letter-spacing: -0.03em; }
+  h2 { font-size: 1.9rem; }
+
+  /* Spacing */
+  section { padding: 3.5rem 1.25rem; }
+  #hero { padding: 6rem 1.25rem 3rem; min-height: auto; }
+
+  /* Hero */
+  .hero-stats { display: none; }
+  .hero-spec-strip { gap: 0.5rem 1rem; font-size: 0.72rem; }
+  .hero-service-tags { gap: 0.4rem; }
+  .hst { font-size: 0.65rem; padding: 0.3rem 0.6rem; }
+  .hss-divider { display: none; }
+
+  /* Services */
+  .services-grid { grid-template-columns: 1fr; }
+  .service-card { padding: 1.75rem; }
+  .service-icon { width: 36px; height: 36px; }
+
+  /* Industries */
+  .industries-row { grid-template-columns: 1fr 1fr; }
+
+  /* Materials */
+  .materials-grid { grid-template-columns: repeat(3, 1fr); }
+  .material-sym { font-size: 1.1rem; }
+
+  /* Machinery */
+  .machines-grid { grid-template-columns: 1fr; }
+  .machine-card { padding: 1.75rem; }
+  .machine-card:last-child .machine-specs-list { grid-template-columns: 1fr; }
+  .machine-brand { font-size: 1.3rem; }
+  .machine-logo-icon { width: 36px; height: 36px; margin-bottom: 1.25rem; }
+
+  /* Specifications */
+  .specs-layout { grid-template-columns: 1fr; gap: 2.5rem; }
+  .specs-numbers { grid-template-columns: 1fr 1fr; }
+  .spec-box { padding: 1.25rem; }
+  .spec-val { font-size: 1.6rem; }
+
+  /* Testimonials */
+  .testimonials-grid { grid-template-columns: 1fr; }
+  .testimonial-card { padding: 1.75rem; }
+  .testimonial-quote { font-size: 2.75rem; }
+
+  /* Process */
+  .process-steps { grid-template-columns: 1fr 1fr; gap: 2rem 1rem; }
+  .process-steps::before { display: none; }
+  .step-dot { width: 2.5rem; height: 2.5rem; }
+
+  /* Quality */
+  .quality-grid { grid-template-columns: 1fr; }
+  .quality-step { padding: 1.75rem; }
+  .quality-certs { grid-template-columns: repeat(2, 1fr); }
+  .quality-cert-item { padding: 1rem; }
+
+  /* FAQ */
+  .faq-list { gap: 0; }
+
+  /* Contact */
+  .contact-layout { grid-template-columns: 1fr; gap: 2.5rem; }
+  .form-row { grid-template-columns: 1fr; }
+  .form-trust-bar { padding: 1rem; }
+  .ftb-item { font-size: 0.75rem; }
+
+  /* Footer */
+  footer { flex-direction: column; gap: 1rem; text-align: center; padding: 2rem 1.25rem; }
+  .footer-links { justify-content: center; flex-wrap: wrap; gap: 1rem; }
+}
+
+/* ── SMALL MOBILE (375px) ── */
+@media (max-width: 480px) {
+  h1 { font-size: 2.1rem; }
+  h2 { font-size: 1.6rem; }
+  section { padding: 3rem 1rem; }
+  #hero { padding: 5.5rem 1rem 2.5rem; }
+  .industries-row { grid-template-columns: 1fr; }
+  .materials-grid { grid-template-columns: repeat(3, 1fr); }
+  .process-steps { grid-template-columns: 1fr; }
+  .specs-numbers { grid-template-columns: 1fr 1fr; }
+  .hero-spec-strip { flex-direction: column; gap: 0.4rem; }
+  .machine-brand-row { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+}
+</style>
+</head>
+<body>
+
+<nav id="navbar">
+  <a href="#" class="nav-logo">Metal<span>HUB</span></a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#industries">Industries</a></li>
+    <li><a href="#machinery">Machinery</a></li>
+    <li><a href="#quality">Quality</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Request a Quote</a>
+  <button class="nav-hamburger" id="hamburger" aria-label="Open menu" onclick="toggleMobileMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#services" onclick="closeMobileMenu()">Services</a>
+  <a href="#industries" onclick="closeMobileMenu()">Industries</a>
+  <a href="#machinery" onclick="closeMobileMenu()">Machinery</a>
+  <a href="#quality" onclick="closeMobileMenu()">Quality</a>
+  <a href="#process" onclick="closeMobileMenu()">Process</a>
+  <a href="#faq" onclick="closeMobileMenu()">FAQ</a>
+  <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg">
+    <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+          <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#C84B14" stroke-width="0.25" opacity="0.18"/>
+        </pattern>
+        <mask id="fade">
+          <radialGradient id="rg" cx="30%" cy="50%" r="70%">
+            <stop offset="0%" stop-color="white" stop-opacity="1"/>
+            <stop offset="100%" stop-color="white" stop-opacity="0"/>
+          </radialGradient>
+          <rect width="1440" height="900" fill="url(#rg)"/>
+        </mask>
+      </defs>
+      <rect width="1440" height="900" fill="url(#grid)" mask="url(#fade)"/>
+      <g id="cnc-path" opacity="0.6">
+        <polyline id="laser-line" points="900,100" fill="none" stroke="#C84B14" stroke-width="1.5" stroke-dasharray="8 4" opacity="0"/>
+        <circle id="laser-dot" cx="900" cy="100" r="4" fill="#C84B14" opacity="0"/>
+      </g>
+      <line x1="1100" y1="0" x2="800" y2="900" stroke="#C84B14" stroke-width="0.5" opacity="0.06"/>
+      <line x1="1200" y1="0" x2="900" y2="900" stroke="#C84B14" stroke-width="0.5" opacity="0.04"/>
+      <line x1="1000" y1="0" x2="700" y2="900" stroke="#C84B14" stroke-width="0.3" opacity="0.04"/>
+    </svg>
+  </div>
+
+  <div class="hero-content">
+    <p class="hero-label">Precision machining from Estonia — dedicated engineer on every order</p>
+    <h1>PRECISION<br>THAT <em>DELIVERS</em></h1>
+    <p class="hero-sub">CNC turning, CNC milling, laser marking and metal 3D printing — with robotic automation for lights-out production. Tolerances down to ±0.02 mm, delivery times you can plan around.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">Request a Quote →</a>
+      <a href="#services" class="btn-ghost">View services ↓</a>
+    </div>
+    <div class="hero-service-tags">
+      <span class="hst">⚙ CNC Turning</span>
+      <span class="hst">⚙ CNC Milling</span>
+      <span class="hst">□ Laser Marking</span>
+      <span class="hst">◈ Metal 3D Printing</span>
+      <span class="hst">⟳ Robotic Automation</span>
+    </div>
+    <div class="hero-spec-strip">
+      <span><span class="hss-val">Ø 0.35–420</span><span class="hss-unit"> mm</span> workpiece range</span>
+      <span class="hss-divider">·</span>
+      <span><span class="hss-val">±0.02</span><span class="hss-unit"> mm</span> standard tolerance</span>
+      <span class="hss-divider">·</span>
+      <span><span class="hss-val">Steel · Al · Ti · Inconel · PEEK · POM</span></span>
+      <span class="hss-divider">·</span>
+      <span><span class="hss-val">3–5</span><span class="hss-unit"> days</span> prototype</span>
+      <span class="hss-divider">·</span>
+      <span><span class="hss-val">1–2</span><span class="hss-unit"> days</span> to Norway</span>
+    </div>
+  </div>
+
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <span class="hero-stat-num">±0,02mm</span>
+      <span class="hero-stat-label">Tolerance</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-num">3–5</span>
+      <span class="hero-stat-label">Working days, prototype</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-num">12+</span>
+      <span class="hero-stat-label">Years of experience</span>
+    </div>
+  </div>
+</section>
+
+<!-- TJENESTER -->
+<section id="services">
+  <p class="section-label">What we offer</p>
+  <h2>Our services</h2>
+  <p class="section-intro">We deliver precision-machined and additively manufactured components in all sizes — from single prototypes to larger series production.</p>
+
+  <div class="services-grid">
+    <div class="service-card">
+      <p class="service-num">01 / 04</p>
+      <svg class="service-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="24" cy="24" r="10" stroke="#C84B14" stroke-width="1.5"/>
+        <line x1="24" y1="4" x2="24" y2="14" stroke="#C84B14" stroke-width="1.5"/>
+        <line x1="24" y1="34" x2="24" y2="44" stroke="#C84B14" stroke-width="1.5"/>
+        <line x1="4" y1="24" x2="14" y2="24" stroke="#C84B14" stroke-width="1.5"/>
+        <line x1="34" y1="24" x2="44" y2="24" stroke="#C84B14" stroke-width="1.5"/>
+        <circle cx="24" cy="24" r="3" fill="#C84B14"/>
+      </svg>
+      <h3 class="service-title">CNC Turning</h3>
+      <p class="service-desc">Multi-axis CNC turning on CMZ TA, TD, TTS and TTL lathes — from single prototypes to series of thousands. Live tooling allows milling, drilling and threading in the same setup, eliminating re-clamping and maintaining concentricity. Twin-spindle and sub-spindle configurations complete both ends of a bar in one cycle. We turn shafts, bushings, flanges, valve components, threaded fittings and precision rotational parts in steel, stainless steel, aluminium, titanium, Inconel, brass, PEEK and POM. RoboJob Turn-Assist automation enables lights-out overnight production runs for series work.</p>
+      <div class="service-bullets">
+        <span>✓ Live tooling: mill, drill, thread in one setup</span>
+        <span>✓ Twin-spindle: complete part without re-clamping</span>
+        <span>✓ Bar stock Ø 6–65 mm or chuck work to Ø 460 mm</span>
+        <span>✓ Turning length up to 3,200 mm (TD Series)</span>
+        <span>✓ Lights-out automation via RoboJob Turn-Assist</span>
+        <span>✓ Standard ±0.05 mm · tight tolerance ±0.02 mm</span>
+      </div>
+      <p class="service-spec">CMZ TA/TD/TTS/TTL · Ø 6–460 mm · L up to 3,200 mm · ±0.02 mm</p>
+    </div>
+    <div class="service-card">
+      <p class="service-num">02 / 04</p>
+      <svg class="service-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="6" y="30" width="36" height="6" stroke="#C84B14" stroke-width="1.5"/>
+        <rect x="16" y="10" width="16" height="20" stroke="#C84B14" stroke-width="1.5"/>
+        <line x1="24" y1="10" x2="24" y2="4" stroke="#C84B14" stroke-width="1.5"/>
+        <circle cx="24" cy="10" r="2.5" fill="#C84B14"/>
+      </svg>
+      <h3 class="service-title">CNC Milling</h3>
+      <p class="service-desc">3- and 5-axis vertical machining on Hyundai WIA KF5600II, F500 and F650 centres with linear roller guideways and BBT dual-contact spindle interfaces. 5-axis simultaneous milling handles complex contoured surfaces, undercuts and compound angles in a single setup — reducing fixtures, improving accuracy and shortening lead time. Typical parts: housings, brackets, manifolds, impellers, medical implant components, structural aerospace parts and die/mould inserts. RoboJob Mill-Assist enables automated pallet loading for unattended series production. HW-MMS smart factory software provides real-time process monitoring.</p>
+      <div class="service-bullets">
+        <span>✓ 3-axis and 5-axis simultaneous machining</span>
+        <span>✓ Work envelope up to 2000 × 3000 × 500 mm</span>
+        <span>✓ BBT dual-contact spindle · up to 15,000 rpm</span>
+        <span>✓ Through-spindle coolant for deep-pocket work</span>
+        <span>✓ Automated pallet loading via RoboJob Mill-Assist</span>
+        <span>✓ Positional accuracy ±0.005 mm</span>
+      </div>
+      <p class="service-spec">Hyundai WIA KF5600II/F500/F650 · 2000 × 3000 × 500 mm · 5-axis · ±0.005 mm</p>
+    </div>
+    <div class="service-card">
+      <p class="service-num">03 / 04</p>
+      <svg class="service-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M8 40 L24 8 L40 40" stroke="#C84B14" stroke-width="1.5"/>
+        <line x1="13" y1="30" x2="35" y2="30" stroke="#C84B14" stroke-width="1.5"/>
+        <circle cx="24" cy="8" r="3" fill="#C84B14"/>
+        <line x1="24" y1="5" x2="24" y2="2" stroke="#C84B14" stroke-width="2"/>
+      </svg>
+      <h3 class="service-title">Laser Marking</h3>
+      <p class="service-desc">TRUMPF TruMark fibre, UV and ultrashort pulse lasers cover the full range of marking procedures: engraving, ablation, annealing, black marking, colour change and foaming — each suited to a different material and quality requirement. <strong>Annealing</strong> gently oxidises stainless steel and titanium surfaces to create durable, smooth markings ideal for medical components, leaving no residue that could trap contamination. <strong>Black marking</strong> uses extremely short pulses to create deep-black, high-contrast, corrosion-resistant codes without ablating the surface — the standard for UDI-compliant medical device labelling. <strong>Deep engraving</strong> is used for dies, moulds and stamping tools where a permanent depression is required. For plastics, we offer colour-change marking (light-on-dark or dark-on-light contrast), foaming (raised, tactile markings), and layer ablation for day/night-design automotive panels. Every job is verified in-process with VisionLine image processing for code placement and OCR/OCV readability — critical for serialised traceability in regulated industries.</p>
+      <div class="service-bullets">
+        <span>✓ Annealing — smooth, residue-free marks on steel &amp; titanium</span>
+        <span>✓ Black marking — UDI-compliant, corrosion-resistant codes</span>
+        <span>✓ Deep engraving — permanent marks for dies &amp; moulds</span>
+        <span>✓ Colour change &amp; foaming for plastics and composites</span>
+        <span>✓ In-process verification via VisionLine (OCR/OCV)</span>
+        <span>✓ Laser class 1 — no enclosure or special PPE required</span>
+      </div>
+      <p class="service-spec">Fibre · UV · Ultrashort pulse · Annealing · Black marking · Engraving · Foaming · Up to 10,000 parts/day</p>
+    </div>
+    <div class="service-card">
+      <p class="service-num">04 / 04</p>
+      <svg class="service-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="10" y="32" width="28" height="4" stroke="#C84B14" stroke-width="1.5" rx="1"/>
+        <rect x="14" y="24" width="20" height="4" stroke="#C84B14" stroke-width="1.5" rx="1"/>
+        <rect x="17" y="16" width="14" height="4" stroke="#C84B14" stroke-width="1.5" rx="1"/>
+        <rect x="20" y="8" width="8" height="4" stroke="#C84B14" stroke-width="1.5" rx="1"/>
+        <line x1="24" y1="6" x2="24" y2="2" stroke="#C84B14" stroke-width="1.5"/>
+        <circle cx="24" cy="2" r="2" fill="#C84B14"/>
+        <line x1="8" y1="36" x2="4" y2="44" stroke="#C84B14" stroke-width="1.5"/>
+        <line x1="40" y1="36" x2="44" y2="44" stroke="#C84B14" stroke-width="1.5"/>
+      </svg>
+      <h3 class="service-title">Metal 3D Printing</h3>
+      <p class="service-desc">Selective Laser Melting (SLM) on Atlix TruPrint systems with TRUMPF fibre lasers, with Automatic Multilaser Alignment checked every two layers to 40 µm accuracy. Metal AM is most valuable where geometry, not volume, drives the design: internal cooling channels that follow the contour of a tool cavity (conformal cooling), part consolidation of multi-component assemblies into a single printed body, and topology-optimised structures where material is placed only where load paths require it — cutting weight by 30–60% versus a machined equivalent while maintaining stiffness. Lattice and lightweight infills are common in aerospace brackets, medical implants (where porous lattice structures also improve osseointegration) and motorsport components. Real-time Melt Pool Monitoring and Powder Bed Monitoring detect porosity, spatter and recoating defects layer-by-layer, with full traceability per build. Printed parts are typically post-machined on our CNC equipment for critical interfaces, then stress-relieved, heat-treated or HIP’d as required — a true design-to-delivery loop under one roof.</p>
+      <div class="service-bullets">
+        <span>✓ Conformal cooling channels impossible to drill or mill</span>
+        <span>✓ Part consolidation — merge assemblies into one print</span>
+        <span>✓ Topology-optimised lattices: 30–60% weight reduction</span>
+        <span>✓ Real-time Melt Pool &amp; Powder Bed Monitoring</span>
+        <span>✓ Post-machining, heat treatment &amp; HIP on request</span>
+        <span>✓ Layer thickness 20–150 µm · build rate to 200 cm³/h</span>
+      </div>
+      <p class="service-spec">316L · Ti6Al4V · Inconel · AlSi10Mg · CoCr · Tool steels · Layer 20–150 µm</p>
+    </div>
+  </div>
+</section>
+
+<!-- INDUSTRIES -->
+<section id="industries">
+  <p class="section-label">Who we work with</p>
+  <h2>Industries served</h2>
+  <div class="industries-row">
+    <div class="ind-pill">
+      <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M10 2L3 6v8l7 4 7-4V6L10 2z" stroke="currentColor" stroke-width="1.2"/>
+        <circle cx="10" cy="10" r="2" stroke="currentColor" stroke-width="1.2"/>
+      </svg>
+      <div>
+        <strong>Oil &amp; Gas</strong>
+        <span>NORSOK · Inconel · 316L</span>
+      </div>
+    </div>
+    <div class="ind-pill">
+      <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <ellipse cx="10" cy="14" rx="7" ry="2" stroke="currentColor" stroke-width="1.2"/>
+        <path d="M3 14V9l7-5 7 5v5" stroke="currentColor" stroke-width="1.2"/>
+      </svg>
+      <div>
+        <strong>Marine</strong>
+        <span>DNV · Duplex · Bronze</span>
+      </div>
+    </div>
+    <div class="ind-pill">
+      <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="4" y="7" width="12" height="8" rx="1" stroke="currentColor" stroke-width="1.2"/>
+        <path d="M7 7V5a3 3 0 016 0v2" stroke="currentColor" stroke-width="1.2"/>
+        <circle cx="10" cy="11" r="1.5" stroke="currentColor" stroke-width="1.2"/>
+      </svg>
+      <div>
+        <strong>Medical</strong>
+        <span>ISO 13485 · Ti6Al4V · FAI</span>
+      </div>
+    </div>
+    <div class="ind-pill">
+      <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M4 14l3-8 3 3 3-3 3 8H4z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+        <line x1="2" y1="14" x2="18" y2="14" stroke="currentColor" stroke-width="1.2"/>
+      </svg>
+      <div>
+        <strong>Aerospace</strong>
+        <span>AS9100 · Titanium · AlSi</span>
+      </div>
+    </div>
+    <div class="ind-pill">
+      <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="3" y="5" width="14" height="9" rx="1" stroke="currentColor" stroke-width="1.2"/>
+        <line x1="3" y1="9" x2="17" y2="9" stroke="currentColor" stroke-width="1.2"/>
+        <line x1="9" y1="5" x2="9" y2="14" stroke="currentColor" stroke-width="1.2"/>
+        <line x1="10" y1="14" x2="10" y2="17" stroke="currentColor" stroke-width="1.2"/>
+      </svg>
+      <div>
+        <strong>Defence</strong>
+        <span>NDA · Steel · Titanium</span>
+      </div>
+    </div>
+    <div class="ind-pill">
+      <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="3" y="3" width="6" height="6" rx="0.5" stroke="currentColor" stroke-width="1.2"/>
+        <rect x="11" y="3" width="6" height="6" rx="0.5" stroke="currentColor" stroke-width="1.2"/>
+        <rect x="3" y="11" width="6" height="6" rx="0.5" stroke="currentColor" stroke-width="1.2"/>
+        <rect x="11" y="11" width="6" height="6" rx="0.5" stroke="currentColor" stroke-width="1.2"/>
+      </svg>
+      <div>
+        <strong>Industrial Machinery</strong>
+        <span>Steel · Aluminium · POM</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MATERIALS -->
+<section id="materials">
+  <p class="section-label">What we machine</p>
+  <h2>Materials</h2>
+  <p class="section-intro">We work with a broad range of metals, plastics and composite materials.</p>
+
+  <div class="materials-grid">
+    <div class="material-item"><span class="material-sym">Fe</span><span class="material-name">Steel</span></div>
+    <div class="material-item"><span class="material-sym">316</span><span class="material-name">Stainless steel</span></div>
+    <div class="material-item"><span class="material-sym">Al</span><span class="material-name">Aluminium</span></div>
+    <div class="material-item"><span class="material-sym">Ti</span><span class="material-name">Titanium</span></div>
+    <div class="material-item"><span class="material-sym">Cu</span><span class="material-name">Copper</span></div>
+    <div class="material-item"><span class="material-sym">Ms</span><span class="material-name">Brass</span></div>
+    <div class="material-item"><span class="material-sym">ABS</span><span class="material-name">ABS plastic</span></div>
+    <div class="material-item"><span class="material-sym">PC</span><span class="material-name">Polycarbonate</span></div>
+    <div class="material-item"><span class="material-sym">POM</span><span class="material-name">Delrin / POM</span></div>
+    <div class="material-item"><span class="material-sym">PA</span><span class="material-name">Nylon</span></div>
+    <div class="material-item"><span class="material-sym">PMMA</span><span class="material-name">Acrylic</span></div>
+    <div class="material-item"><span class="material-sym">CF</span><span class="material-name">Carbon fibre</span></div>
+  </div>
+</section>
+
+<!-- MACHINERY -->
+<section id="machinery">
+  <p class="section-label">Technology and equipment</p>
+  <h2>Machinery</h2>
+  <p class="section-intro">We continuously invest in state-of-the-art production equipment from world-leading suppliers — to ensure precision, capacity and reliability on every single job.</p>
+
+  <div class="machines-grid">
+
+    <!-- CMZ -->
+    <div class="machine-card">
+      <div class="machine-brand-row">
+        <div class="machine-brand">CMZ<span>.</span></div>
+        <span class="machine-category">CNC Turning</span>
+      </div>
+      <div class="machine-logo-icon">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="12" cy="12" r="9" stroke="#C84B14" stroke-width="1.5"/>
+          <circle cx="12" cy="12" r="3" stroke="#C84B14" stroke-width="1.5"/>
+          <line x1="12" y1="3" x2="12" y2="9" stroke="#C84B14" stroke-width="1.5"/>
+          <line x1="12" y1="15" x2="12" y2="21" stroke="#C84B14" stroke-width="1.5"/>
+          <line x1="3" y1="12" x2="9" y2="12" stroke="#C84B14" stroke-width="1.5"/>
+          <line x1="15" y1="12" x2="21" y2="12" stroke="#C84B14" stroke-width="1.5"/>
+        </svg>
+      </div>
+      <p class="machine-model">TA Series · TD Series · TTS Twin-Spindle · TTL Turning Centre</p>
+      <p class="machine-desc">CMZ has been manufacturing CNC lathes in Spain since 1945 — built for a service life of over 20 years. The TA Series features a rigid prismatic bed, an oil-cooled turret with a built-in 12,000 rpm live-tool motor, and integrated spindle technology for thermal stability across long production runs. The TD Series handles large parts up to Z3200 bed length. The TTS twin-spindle lathe completes bar-turning in a single setup; the TTL turning centre combines dual turrets with simultaneous milling on the sub-spindle — from a 50 mm bar to a finished part without reclamping.</p>
+      <ul class="machine-specs-list">
+        <li><span class="machine-spec-key">Series</span><span class="machine-spec-val">TA · TD · TTS · TTL · Gantry</span></li>
+        <li><span class="machine-spec-key">Max. turning length</span><span class="machine-spec-val">Z400–Z3200 (up to 3200 mm)</span></li>
+        <li><span class="machine-spec-key">Max. turning Ø</span><span class="machine-spec-val">up to Ø 460 mm</span></li>
+        <li><span class="machine-spec-key">Spindle speed</span><span class="machine-spec-val">up to 5,000 rpm · TTL: 0→1.3 s</span></li>
+        <li><span class="machine-spec-key">Live tooling</span><span class="machine-spec-val">12,000 rpm · oil-cooled · hydraulic clamping</span></li>
+        <li><span class="machine-spec-key">Axes</span><span class="machine-spec-val">X · Z · Y · B · sub-spindle · tailstock</span></li>
+        <li><span class="machine-spec-key">Control</span><span class="machine-spec-val">Fanuc 32i · rapid traverse 30 m/min</span></li>
+        <li><span class="machine-spec-key">Tolerance</span><span class="machine-spec-val">±0.02 mm</span></li>
+        <li><span class="machine-spec-key">Automation</span><span class="machine-spec-val">Gantry loader GL20II · lights-out capable</span></li>
+      </ul>
+    </div>
+
+    <!-- HYUNDAI WIA -->
+    <div class="machine-card">
+      <div class="machine-brand-row">
+        <div class="machine-brand">Hyundai <span>WIA</span></div>
+        <span class="machine-category">CNC Milling</span>
+      </div>
+      <div class="machine-logo-icon">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="3" y="14" width="18" height="5" rx="1" stroke="#C84B14" stroke-width="1.5"/>
+          <rect x="8" y="5" width="8" height="9" rx="1" stroke="#C84B14" stroke-width="1.5"/>
+          <line x1="12" y1="5" x2="12" y2="2" stroke="#C84B14" stroke-width="1.5"/>
+          <circle cx="12" cy="5" r="1.5" fill="#C84B14"/>
+        </svg>
+      </div>
+      <p class="machine-model">F400 · F500PLUS · F500/50 · KF5600II · F650 Series</p>
+      <p class="machine-desc">Hyundai WIA vertical machining centres are built around a high-rigidity box structure with <strong>linear roller guideways</strong> on all axes for low non-cutting time and consistent precision under heavy loads. Double-anchored, pretensioned ballscrews on X, Y and Z eliminate thermal growth for outstanding repeatability. <strong>Angular contact bearing headstocks</strong> deliver high torque at the spindle for hard-milling of die/mould and medical components. The KF5600II adds through-spindle coolant and a dual-contact BT/BBT spindle interface for maximum rigidity at high speed. Hyundai WIA’s HW-MMS smart factory software monitors machine status, load, and program in real time.</p>
+      <ul class="machine-specs-list">
+        <li><span class="machine-spec-key">Series</span><span class="machine-spec-val">F400 · F500 · F650 · KF5600II · FD Series</span></li>
+        <li><span class="machine-spec-key">Table size (KF5600II)</span><span class="machine-spec-val">1,250 × 560 mm · load 1,000 kg</span></li>
+        <li><span class="machine-spec-key">Travel X·Y·Z (KF5600II)</span><span class="machine-spec-val">1,100 × 560 × 520 mm</span></li>
+        <li><span class="machine-spec-key">Spindle speed</span><span class="machine-spec-val">8,000 / 10,000 / 12,000 / 15,000 rpm</span></li>
+        <li><span class="machine-spec-key">Spindle taper</span><span class="machine-spec-val">BBT40 · BT50 · HSK-A63 (optional)</span></li>
+        <li><span class="machine-spec-key">Rapid traverse</span><span class="machine-spec-val">36 m/min (X·Y·Z)</span></li>
+        <li><span class="machine-spec-key">Tool changer</span><span class="machine-spec-val">24 / 30 tools · chip-to-chip 3.2 s</span></li>
+        <li><span class="machine-spec-key">Positional accuracy</span><span class="machine-spec-val">±0.005 mm</span></li>
+        <li><span class="machine-spec-key">Guideways</span><span class="machine-spec-val">Linear roller · all axes</span></li>
+        <li><span class="machine-spec-key">Control</span><span class="machine-spec-val">Fanuc · HW-MMS smart factory monitoring</span></li>
+      </ul>
+    </div>
+
+    <!-- ROBOJOB -->
+    <div class="machine-card">
+      <div class="machine-brand-row">
+        <div class="machine-brand">Robo<span>Job</span></div>
+        <span class="machine-category">Automated production</span>
+      </div>
+      <div class="machine-logo-icon">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="7" y="2" width="10" height="7" rx="1" stroke="#C84B14" stroke-width="1.5"/>
+          <path d="M12 9v3M8 12H4a1 1 0 00-1 1v2a1 1 0 001 1h4M16 12h4a1 1 0 011 1v2a1 1 0 01-1 1h-4" stroke="#C84B14" stroke-width="1.5"/>
+          <rect x="8" y="15" width="8" height="7" rx="1" stroke="#C84B14" stroke-width="1.5"/>
+          <circle cx="10" cy="5.5" r="1" fill="#C84B14"/>
+          <circle cx="14" cy="5.5" r="1" fill="#C84B14"/>
+        </svg>
+      </div>
+      <p class="machine-model">Turn-Assist · Mill-Assist · Tower · Pallet-Load</p>
+      <p class="machine-desc">With over 2,000 robot installations worldwide, RoboJob is the market leader in CNC automation. The <strong>Turn-Assist</strong> is the benchmark in CNC lathe automation for over 15 years — its patented stacking principle, configurable dual-gripper table and intuitive software allow automation of a wide range of part diameters and weights without additional adjustments. The <strong>Mill-Assist</strong>, launched in 2012 and now in its second generation, is the most compact and user-friendly loading solution for 5-axis milling centres, handling any workpiece shape or material with two versatile interchangeable grippers. The Tower vertical lift system stores workpieces, clamping devices and pallets on up to 28 levels for extended lights-out runs. All systems use RoboJob’s graphical touchscreen software — no robotics experience required, operational within days of installation.</p>
+      <ul class="machine-specs-list">
+        <li><span class="machine-spec-key">Installations worldwide</span><span class="machine-spec-val">&gt;2,000 · market leader</span></li>
+        <li><span class="machine-spec-key">Turn-Assist Ø range</span><span class="machine-spec-val">25–270 mm workpiece diameter</span></li>
+        <li><span class="machine-spec-key">Turn-Assist payload</span><span class="machine-spec-val">up to 20 kg · table cap. 2 × 300 kg</span></li>
+        <li><span class="machine-spec-key">Mill-Assist</span><span class="machine-spec-val">5-axis · dual gripper · any shape/material</span></li>
+        <li><span class="machine-spec-key">Tower storage</span><span class="machine-spec-val">up to 28 levels · pallets + clamping devices</span></li>
+        <li><span class="machine-spec-key">Operating mode</span><span class="machine-spec-val">24/7 lights-out · laser safety scanner</span></li>
+        <li><span class="machine-spec-key">Setup time</span><span class="machine-spec-val">Minutes per job · graphical touchscreen UI</span></li>
+        <li><span class="machine-spec-key">Integration</span><span class="machine-spec-val">CMZ Turn-Assist · Hyundai WIA Mill-Assist</span></li>
+      </ul>
+    </div>
+
+    <!-- TRUMPF TruMark -->
+    <div class="machine-card">
+      <div class="machine-brand-row">
+        <div class="machine-brand">TRUMPF <span>TruMark</span></div>
+        <span class="machine-category">Laser Marking</span>
+      </div>
+      <div class="machine-logo-icon">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M12 2L8 8h8l-4-6z" stroke="#C84B14" stroke-width="1.5" stroke-linejoin="round"/>
+          <line x1="12" y1="8" x2="12" y2="14" stroke="#C84B14" stroke-width="2"/>
+          <circle cx="12" cy="17" r="3" stroke="#C84B14" stroke-width="1.5"/>
+          <line x1="6" y1="20" x2="4" y2="22" stroke="#C84B14" stroke-width="1.5"/>
+          <line x1="18" y1="20" x2="20" y2="22" stroke="#C84B14" stroke-width="1.5"/>
+          <line x1="3" y1="17" x2="5" y2="17" stroke="#C84B14" stroke-width="1.5"/>
+          <line x1="19" y1="17" x2="21" y2="17" stroke="#C84B14" stroke-width="1.5"/>
+        </svg>
+      </div>
+      <p class="machine-model">TruMark 5010 · TruMark 6030 · TruMark Station 5000 · TruMicro Mark</p>
+      <p class="machine-desc">TRUMPF TruMark fibre and ultrashort pulse lasers deliver permanent, high-contrast markings on metals, plastics, glass, ceramics and silicon. The TruMark 6030 adjusts focus in real time for marking on 3D free-form surfaces. For medical and aerospace parts, the TruMicro Mark uses picosecond pulses for cold <strong>black marking</strong> — creating a corrosion-resistant nanostructure with virtually no heat-affected zone, surviving aggressive cleaning cycles. VisionLine image processing verifies code placement and readability in-process. All systems are laser class 1 — no additional protective enclosure required.</p>
+      <ul class="machine-specs-list">
+        <li><span class="machine-spec-key">Laser types</span><span class="machine-spec-val">Fibre (IR) · UV · Ultrashort pulse (ps/fs)</span></li>
+        <li><span class="machine-spec-key">Marking modes</span><span class="machine-spec-val">Black marking · Annealing · Engraving · Ablation</span></li>
+        <li><span class="machine-spec-key">Black marking</span><span class="machine-spec-val">Corrosion-resistant · UDI-compliant · 3D surfaces</span></li>
+        <li><span class="machine-spec-key">Marking area</span><span class="machine-spec-val">up to 175 × 175 mm · 3D free-form</span></li>
+        <li><span class="machine-spec-key">Pulse rate</span><span class="machine-spec-val">up to 1,000 kHz</span></li>
+        <li><span class="machine-spec-key">Capacity</span><span class="machine-spec-val">up to 10,000 parts/day</span></li>
+        <li><span class="machine-spec-key">Materials</span><span class="machine-spec-val">Metals · Plastics · Glass · Ceramics · Silicon</span></li>
+        <li><span class="machine-spec-key">Quality</span><span class="machine-spec-val">VisionLine verification · Laser class 1</span></li>
+      </ul>
+    </div>
+
+    <!-- TRUMPF TruPrint / Atlix -->
+    <div class="machine-card">
+      <div class="machine-brand-row">
+        <div class="machine-brand">Atlix <span>TruPrint</span></div>
+        <span class="machine-category">Metal 3D Printing</span>
+      </div>
+      <div class="machine-logo-icon">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="4" y="17" width="16" height="3" rx="0.5" stroke="#C84B14" stroke-width="1.5"/>
+          <rect x="6" y="13" width="12" height="3" rx="0.5" stroke="#C84B14" stroke-width="1.5"/>
+          <rect x="8" y="9" width="8" height="3" rx="0.5" stroke="#C84B14" stroke-width="1.5"/>
+          <rect x="10" y="5" width="4" height="3" rx="0.5" stroke="#C84B14" stroke-width="1.5"/>
+          <line x1="12" y1="3" x2="12" y2="5" stroke="#C84B14" stroke-width="1.5"/>
+          <circle cx="12" cy="2.5" r="1.5" fill="#C84B14"/>
+        </svg>
+      </div>
+      <p class="machine-model">TruPrint 1000 · TruPrint 3000</p>
+      <p class="machine-desc">Born from TRUMPF Additive Manufacturing, Atlix TruPrint systems use multi-laser Selective Laser Melting (SLM) with TRUMPF fibre lasers to build fully dense metal parts layer by layer. Automatic Multilaser Alignment (AMA) checks beam alignment every two layers to 40 µm accuracy. Melt Pool Monitoring and Powder Bed Monitoring detect process deviations in real time. A closed inert powder circuit enables safe handling of reactive alloys with full material traceability.</p>
+      <ul class="machine-specs-list">
+        <li><span class="machine-spec-key">Technology</span><span class="machine-spec-val">SLM · TRUMPF fibre laser</span></li>
+        <li><span class="machine-spec-key">Build volume (TP1000)</span><span class="machine-spec-val">Ø 100 × H 100 mm</span></li>
+        <li><span class="machine-spec-key">Build volume (TP3000)</span><span class="machine-spec-val">300 × 300 × 400 mm</span></li>
+        <li><span class="machine-spec-key">Layer thickness</span><span class="machine-spec-val">20–150 µm</span></li>
+        <li><span class="machine-spec-key">Laser power</span><span class="machine-spec-val">200–500 W · optional multilaser</span></li>
+        <li><span class="machine-spec-key">Build rate</span><span class="machine-spec-val">10–200 cm³/h</span></li>
+        <li><span class="machine-spec-key">Beam diameter</span><span class="machine-spec-val">55–200 µm (adjustable)</span></li>
+        <li><span class="machine-spec-key">Preheating</span><span class="machine-spec-val">up to 200 °C</span></li>
+        <li><span class="machine-spec-key">Materials</span><span class="machine-spec-val">316L · Ti6Al4V · Inconel · AlSi10Mg · CoCr · tool steels</span></li>
+        <li><span class="machine-spec-key">Quality monitoring</span><span class="machine-spec-val">AMA · Melt Pool · Powder Bed · laser calibration</span></li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- SPECIFICATIONS -->
+<section id="specifications">
+  <p class="section-label">Capacity and accuracy</p>
+  <h2>Specifications</h2>
+
+  <div class="specs-layout">
+    <div class="specs-numbers">
+      <div class="spec-box">
+        <span class="spec-val">±0.02<span class="spec-unit">mm</span></span>
+        <div class="spec-label">Tolerance</div>
+      </div>
+      <div class="spec-box">
+        <span class="spec-val">2000×3000<span class="spec-unit">mm</span></span>
+        <div class="spec-label">Milling area</div>
+      </div>
+      <div class="spec-box">
+        <span class="spec-val">3–5<span class="spec-unit">d</span></span>
+        <div class="spec-label">Prototype lead time</div>
+      </div>
+      <div class="spec-box">
+        <span class="spec-val">12+<span class="spec-unit">yrs</span></span>
+        <div class="spec-label">Experience</div>
+      </div>
+    </div>
+
+    <div class="specs-text">
+      <h3>Built for demanding industrial standards</h3>
+      <p>We are experienced in working with demanding industrial customers — from oil and gas to medical equipment and the maritime sector. All parts undergo systematic quality control before delivery.</p>
+      <p>CMZ lathes and Hyundai WIA machining centres, automated with RoboJob robot cells and TRUMPF TruMark laser marking, give us the capacity to run round-the-clock production with documented traceability.</p>
+      <div class="cert-badges">
+        <span class="cert-badge">ISO 9001:2015</span>
+        <span class="cert-badge">CE certification</span>
+        <span class="cert-badge">RoHS compliant</span>
+        <span class="cert-badge">Traceability incl.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <p class="section-label">Client feedback</p>
+  <h2>What our clients say</h2>
+  <div class="testimonials-grid">
+    <div class="testimonial-card">
+      <div class="testimonial-quote">"</div>
+      <p class="testimonial-text">We sent MetalHUB a complex subsea valve housing in Inconel 625. First article was within spec on every dimension — delivered in four days. That kind of reliability is rare at this price point.</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">JS</div>
+        <div>
+          <strong>Johan S.</strong>
+          <span>Procurement Manager, Offshore Equipment AS · Norway</span>
+        </div>
+      </div>
+      <div class="testimonial-industry">Oil &amp; Gas</div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-quote">"</div>
+      <p class="testimonial-text">We prototyped a titanium surgical guide with MetalHUB. The surface finish and dimensional accuracy were excellent. The measurement report was complete and exactly what our quality team needed for submission.</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">AK</div>
+        <div>
+          <strong>Anna K.</strong>
+          <span>R&amp;D Engineer, MedTech Nordic · Sweden</span>
+        </div>
+      </div>
+      <div class="testimonial-industry">Medical</div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-quote">"</div>
+      <p class="testimonial-text">We needed 3,000 aluminium brackets on a two-week lead time. MetalHUB confirmed within hours, updated us daily, and shipped on time. No surprises — exactly what you want from a contract manufacturer.</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">MH</div>
+        <div>
+          <strong>Mads H.</strong>
+          <span>Operations Director, Maritime Systems · Denmark</span>
+        </div>
+      </div>
+      <div class="testimonial-industry">Marine</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- PROCESS -->
+<section id="process">
+  <p class="section-label">How we work</p>
+  <h2>From enquiry to delivery</h2>
+  <p class="section-intro">A simple and transparent process tailored to industrial customers.</p>
+
+  <div class="process-steps">
+    <div class="process-step">
+      <div class="step-dot">01</div>
+      <h4 class="step-title">Send enquiry</h4>
+      <p class="step-desc">Upload drawings (DXF, STEP, PDF) or describe your requirements. We respond within one working day with an initial assessment.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-dot">02</div>
+      <h4 class="step-title">Quote & specification</h4>
+      <p class="step-desc">You receive a detailed quote with pricing, material selection, tolerances and lead time. No hidden costs.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-dot">03</div>
+      <h4 class="step-title">Production</h4>
+      <p class="step-desc">We start as soon as the order is confirmed. You can track progress along the way. All parts are documented with a measurement report.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-dot">04</div>
+      <h4 class="step-title">Post-processing</h4>
+      <p class="step-desc">Anodising, zinc plating, passivation, sandblasting or polishing — coordinated through our certified partners. One order, one point of contact.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-dot">05</div>
+      <h4 class="step-title">Delivery</h4>
+      <p class="step-desc">Secure packaging, measurement report enclosed, shipped via DHL or DB Schenker. 1–2 day transit to Norway. Express available.</p>
+    </div>
+  </div>
+</section>
+
+<!-- QUALITY -->
+<section id="quality">
+  <p class="section-label">How we ensure accuracy</p>
+  <h2>Quality control</h2>
+  <p class="section-intro">Every part leaves our facility with documented proof of compliance. No exceptions.</p>
+  <div class="quality-grid">
+    <div class="quality-step">
+      <div class="quality-num">01</div>
+      <h3 class="quality-title">First Article Inspection (FAI)</h3>
+      <p class="quality-desc">The first part of every new order is fully inspected against your drawing before series production begins. <strong>Dimensional report</strong> provided as standard.</p>
+    </div>
+    <div class="quality-step">
+      <div class="quality-num">02</div>
+      <h3 class="quality-title">CMM Measurement</h3>
+      <p class="quality-desc">Complex geometries and GD&amp;T callouts are verified on our Zeiss coordinate measuring machine. Measurement uncertainty <strong>&lt;2 µm</strong>.</p>
+    </div>
+    <div class="quality-step">
+      <div class="quality-num">03</div>
+      <h3 class="quality-title">Material Traceability</h3>
+      <p class="quality-desc">Every material batch is documented with <strong>mill certificates (EN 10204 3.1)</strong>. Heat number and cert shipped with every order on request.</p>
+    </div>
+    <div class="quality-step">
+      <div class="quality-num">04</div>
+      <h3 class="quality-title">Surface &amp; Visual Inspection</h3>
+      <p class="quality-desc">Ra values measured on critical surfaces. Visual inspection under controlled lighting before packaging. <strong>Any non-conformance is flagged immediately.</strong></p>
+    </div>
+    <div class="quality-step">
+      <div class="quality-num">05</div>
+      <h3 class="quality-title">Measurement Report</h3>
+      <p class="quality-desc">A full dimensional report (PDF) is included with every shipment. Optional: <strong>PPAP Level 3</strong> documentation for automotive and tier-1 suppliers.</p>
+    </div>
+    <div class="quality-step">
+      <div class="quality-num">06</div>
+      <h3 class="quality-title">ISO 9001:2015 Certified</h3>
+      <p class="quality-desc">Our quality management system is <strong>certified to ISO 9001:2015</strong>. Audit records and certificates available on request for supplier qualification.</p>
+    </div>
+  </div>
+  <div class="quality-certs">
+    <div class="quality-cert-item">
+      <span class="qc-badge">ISO 9001:2015</span>
+      <span class="qc-label">Quality Management</span>
+    </div>
+    <div class="quality-cert-item">
+      <span class="qc-badge">EN 10204 3.1</span>
+      <span class="qc-label">Material Certs</span>
+    </div>
+    <div class="quality-cert-item">
+      <span class="qc-badge">FAI Standard</span>
+      <span class="qc-label">First Article</span>
+    </div>
+    <div class="quality-cert-item">
+      <span class="qc-badge">Zeiss CMM</span>
+      <span class="qc-label">±2 µm uncertainty</span>
+    </div>
+    <div class="quality-cert-item">
+      <span class="qc-badge">RoHS</span>
+      <span class="qc-label">Compliance</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- FAQ -->
+<section id="faq">
+  <p class="section-label">Common questions</p>
+  <h2>FAQ</h2>
+  <p class="section-intro">Answers to the questions we hear most from new clients.</p>
+  <div class="faq-list">
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        What file formats do you accept?
+        <span class="faq-arrow">↓</span>
+      </button>
+      <div class="faq-a">
+        <p>We accept all standard CAD and drawing formats: <strong>STEP, IGES, DXF, DWG, STL, PDF</strong> and native files from SolidWorks, CATIA, Fusion 360 and Inventor. If you have an older format, contact us — we can usually work with it. For 3D printing we require STEP or STL.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        What is your typical lead time?
+        <span class="faq-arrow">↓</span>
+      </button>
+      <div class="faq-a">
+        <p>Prototypes and small batches are typically ready in <strong>3–5 working days</strong> from order confirmation. Series production lead times depend on quantity, complexity and current capacity — usually 2–4 weeks. Express service (48 hours) is available for urgent orders. We confirm the exact date before you place the order.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Is there a minimum order quantity?
+        <span class="faq-arrow">↓</span>
+      </button>
+      <div class="faq-a">
+        <p><strong>No minimum order quantity.</strong> We run single prototypes as readily as series of 10,000+. For very low quantities, set-up costs are amortised differently, which we reflect transparently in the quote.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Do you provide material certificates?
+        <span class="faq-arrow">↓</span>
+      </button>
+      <div class="faq-a">
+        <p>Yes. All materials are sourced with <strong>EN 10204 3.1 mill certificates</strong> from certified suppliers. Heat number and cert are shipped with the parts on request, or provided electronically as a PDF. For medical and aerospace orders, full material traceability is included as standard.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        What surface finishes can you provide?
+        <span class="faq-arrow">↓</span>
+      </button>
+      <div class="faq-a">
+        <p>As-machined (Ra 0.8–3.2 µm), fine finish (Ra 0.4 µm), anodising (Type II and III), zinc plating, electroless nickel, passivation (stainless), sandblasting and polishing. We work with certified post-processing partners and coordinate the full supply chain if needed.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        How is shipping to Norway handled?
+        <span class="faq-arrow">↓</span>
+      </button>
+      <div class="faq-a">
+        <p>We ship via DHL, FedEx and DB Schenker with full tracking. Standard transit to Norway is <strong>1–2 working days</strong> from dispatch. We handle all export documentation including EUR.1 movement certificates for preferential EU–EEA tariff treatment. Customs clearance support available on request.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Can you sign an NDA before I share drawings?
+        <span class="faq-arrow">↓</span>
+      </button>
+      <div class="faq-a">
+        <p>Absolutely. We sign NDAs as a routine part of our onboarding process — especially for defence, medical and product development clients. Send us your standard NDA or use ours. Signed and returned within one working day.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        What tolerances can you hold?
+        <span class="faq-arrow">↓</span>
+      </button>
+      <div class="faq-a">
+        <p>Standard machining tolerance is <strong>±0.05 mm</strong>. Tight tolerance work is routinely held to <strong>±0.02 mm</strong>. For critical fits and bearing seats we regularly achieve <strong>±0.005 mm</strong> with CMM verification. If your drawing calls tighter, discuss it with us — we'll tell you honestly what's achievable.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact">
+  <p class="section-label">Get started</p>
+  <h2>Request a Quote</h2>
+  <p class="section-intro">Tell us about your project. We will get back to you with a concrete quote within one working day.</p>
+
+  <div class="contact-layout">
+    <div class="contact-info">
+      <h3>Contact information</h3>
+      <div class="contact-detail">
+        <div class="contact-detail-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        </div>
+        <div class="contact-detail-text">
+          <strong>Email</strong>
+          info@metalhub.ee
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-detail-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.04 11.04 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+        </div>
+        <div class="contact-detail-text">
+          <strong>Phone</strong>
+          +372 5123 4567
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-detail-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        </div>
+        <div class="contact-detail-text">
+          <strong>Address</strong>
+          Tööstuse tee 14<br>13816 Tallinn, Estonia<br><span style="color:rgba(250,250,248,0.35); font-size:0.8rem;">EU production · Shipping across Europe</span>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-detail-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <div class="contact-detail-text">
+          <strong>Response time</strong>
+          Within one working day<br>Express handling available
+        </div>
+      </div>
+    </div>
+
+    <div class="form-trust-bar">
+      <div class="ftb-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        <span>Dedicated engineer assigned to your project — one contact, full accountability</span>
+      </div>
+      <div class="ftb-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+        <span>Net-30 &amp; Net-60 payment terms available for established customers</span>
+      </div>
+      <div class="ftb-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M9 12l2 2 4-4"/><path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        <span>NDA signed within one working day — your IP is protected from first contact</span>
+      </div>
+    </div>
+    <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+      <div class="form-row">
+        <div class="form-group">
+          <label>Full name</label>
+          <input type="text" placeholder="John Smith" required>
+        </div>
+        <div class="form-group">
+          <label>Company</label>
+          <input type="text" placeholder="Company Ltd">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Email address</label>
+          <input type="email" placeholder="john@company.com" required>
+        </div>
+        <div class="form-group">
+          <label>Phone</label>
+          <input type="tel" placeholder="+44 xxx xxxx xxxx">
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Service</label>
+        <select required>
+          <option value="" disabled selected>Select service</option>
+          <option>CNC Turning</option>
+          <option>CNC Milling</option>
+          <option>Laser Marking</option>
+          <option>Metal 3D Printing</option>
+          <option>Combination / not sure</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Project description</label>
+        <textarea placeholder="Describe material, dimensions, tolerances, quantity and desired lead time. You can also send drawings by email after we have been in touch."></textarea>
+      </div>
+      <div class="form-group">
+        <label>Attach files <span style="color:rgba(250,250,248,0.3);font-weight:300;">(DXF, STEP, PDF, DWG — max 20 MB)</span></label>
+        <div class="file-drop" id="fileDrop">
+          <input type="file" id="fileInput" multiple accept=".dxf,.step,.stp,.pdf,.dwg,.stl,.iges,.igs" style="display:none">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="opacity:0.4;margin-bottom:0.5rem" aria-hidden="true"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M17 8l-5-5-5 5M12 3v12"/></svg>
+          <p class="file-drop-text">Drop files here or <span class="file-browse">browse</span></p>
+          <p class="file-drop-hint">DXF · STEP · PDF · DWG · STL · IGES</p>
+        </div>
+        <div id="fileList" class="file-list"></div>
+      </div>
+      <button type="submit" class="form-submit">
+        Submit enquiry
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </button>
+      <p class="form-success" id="formSuccess">✓ Thank you! We will be in touch within one working day.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <span class="footer-logo">Metal<span>HUB</span> OÜ</span>
+  <span class="footer-copy">© 2025 MetalHUB OÜ · reg. no. 12345678 · Tallinn, Estonia</span>
+  <div class="footer-links">
+    <a href="#">Privacy</a>
+    <a href="#">Terms</a>
+    <a href="#">Quality policy</a>
+  </div>
+</footer>
+
+<script>
+// Mobile menu
+function toggleMobileMenu() {
+  const menu = document.getElementById('mobileMenu');
+  const nav = document.getElementById('navbar');
+  menu.classList.toggle('open');
+  nav.classList.toggle('mobile-nav-open');
+}
+function closeMobileMenu() {
+  document.getElementById('mobileMenu').classList.remove('open');
+  document.getElementById('navbar').classList.remove('mobile-nav-open');
+}
+
+// FAQ accordion
+function toggleFaq(button) {
+  const item = button.closest('.faq-item');
+  const wasOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+  if (!wasOpen) item.classList.add('open');
+}
+
+// Close menu on outside click
+document.addEventListener('click', e => {
+  const menu = document.getElementById('mobileMenu');
+  const hb = document.getElementById('hamburger');
+  if (menu.classList.contains('open') && !menu.contains(e.target) && !hb.contains(e.target)) {
+    closeMobileMenu();
+  }
+});
+
+// Navbar scroll effect
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 40);
+});
+
+// Intersection observer for scroll animations
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      observer.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.15 });
+
+document.querySelectorAll(
+  '.service-card, .spec-box, .process-step, .material-item, .hero-stat, .machine-card, .ind-pill, .quality-step, .testimonial-card'
+).forEach(el => observer.observe(el));
+
+// Trigger hero stats sooner
+setTimeout(() => {
+  document.querySelectorAll('.hero-stat').forEach((el, i) => {
+    setTimeout(() => el.classList.add('visible'), i * 200 + 600);
+  });
+}, 300);
+
+// Animated CNC path in hero
+const laserLine = document.getElementById('laser-line');
+const laserDot = document.getElementById('laser-dot');
+const path = [
+  [900,100],[1050,150],[1100,280],[980,320],[1020,420],
+  [1150,460],[1200,560],[1080,600],[1100,720],[980,760],[1050,860]
+];
+let step = 0;
+let points = [[900, 100]];
+
+function animatePath() {
+  if (step >= path.length) { step = 0; points = [[900,100]]; laserLine.setAttribute('points','900,100'); }
+  step++;
+  const [x, y] = path[Math.min(step, path.length-1)];
+  points.push([x, y]);
+  laserLine.setAttribute('points', points.map(p => p.join(',')).join(' '));
+  laserLine.setAttribute('opacity', '0.5');
+  laserDot.setAttribute('cx', x);
+  laserDot.setAttribute('cy', y);
+  laserDot.setAttribute('opacity', '0.9');
+  setTimeout(animatePath, 600);
+}
+setTimeout(animatePath, 1000);
+
+// Form submit
+function handleSubmit(e) {
+  e.preventDefault();
+  const btn = e.target.querySelector('.form-submit');
+  btn.textContent = 'Sending...';
+  btn.disabled = true;
+  setTimeout(() => {
+    document.getElementById('formSuccess').style.display = 'block';
+    btn.style.display = 'none';
+  }, 1200);
+}
+
+// File upload
+const fileDrop = document.getElementById('fileDrop');
+const fileInput = document.getElementById('fileInput');
+const fileList = document.getElementById('fileList');
+let attachedFiles = [];
+
+function formatSize(bytes) {
+  if (bytes < 1024) return bytes + ' B';
+  if (bytes < 1024*1024) return (bytes/1024).toFixed(1) + ' KB';
+  return (bytes/(1024*1024)).toFixed(1) + ' MB';
+}
+
+function renderFiles() {
+  fileList.innerHTML = '';
+  attachedFiles.forEach((f, i) => {
+    const item = document.createElement('div');
+    item.className = 'file-item';
+    item.innerHTML = `
+      <span class="file-item-name">${f.name}</span>
+      <span class="file-item-size">${formatSize(f.size)}</span>
+      <button class="file-item-remove" type="button" onclick="removeFile(${i})">×</button>`;
+    fileList.appendChild(item);
+  });
+}
+
+function addFiles(newFiles) {
+  for (const f of newFiles) {
+    if (f.size > 20 * 1024 * 1024) { alert(`"${f.name}" exceeds 20 MB limit.`); continue; }
+    if (!attachedFiles.find(x => x.name === f.name && x.size === f.size)) attachedFiles.push(f);
+  }
+  renderFiles();
+}
+
+function removeFile(i) { attachedFiles.splice(i, 1); renderFiles(); }
+
+fileDrop.addEventListener('click', () => fileInput.click());
+document.querySelector('.file-browse').addEventListener('click', e => { e.stopPropagation(); fileInput.click(); });
+fileInput.addEventListener('change', () => { addFiles(fileInput.files); fileInput.value = ''; });
+fileDrop.addEventListener('dragover', e => { e.preventDefault(); fileDrop.classList.add('dragover'); });
+fileDrop.addEventListener('dragleave', () => fileDrop.classList.remove('dragover'));
+fileDrop.addEventListener('drop', e => { e.preventDefault(); fileDrop.classList.remove('dragover'); addFiles(e.dataTransfer.files); });
+</script>
+</body>
+</html>
